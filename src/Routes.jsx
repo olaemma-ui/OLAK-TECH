@@ -4,6 +4,7 @@ import { Layout } from "./Layout";
 import { HomePage } from "./Pages/HomePage";
 import { AboutPage } from "./Pages/AboutPage";
 import { CodeHamLet } from "./Pages/CodeHamlet";
+import { ProjectsPage } from "./Pages/ProjectsPage";
 
 
 export function App() {
@@ -15,6 +16,7 @@ export function App() {
                     <Route path="contact" element={<Contact/>} />
                     <Route path="about" element={<AboutPage />} />
                     <Route path="codeHamlet" element={<CodeHamLet />} />
+                    <Route path="projects" element={<ProjectsPage />} />
 
                     <Route path="*" element={<h1>Error 404 Page</h1>} />
                 </Route>

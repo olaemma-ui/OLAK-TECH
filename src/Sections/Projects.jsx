@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Wrapper, Slider, Project } from "../Components/Components";
 import { projects } from "../Data/ComponentData";
 
@@ -16,6 +17,10 @@ function Projects() {
                         <Slider>
                             {projects.map((project)=> <Project {...project} />)}
                         </Slider>
+
+                        <Link to='/projects' className='read-more no-decoration'>
+                            See More
+                        </Link>
                 </div>
             </section>
 

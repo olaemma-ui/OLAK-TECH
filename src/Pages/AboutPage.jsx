@@ -6,7 +6,7 @@ export const AboutPage =() => {
             <Jumbotron 
                 page='About Us' 
                 id='About Us'
-                title='OLAK Tech' 
+                title='About Us' 
                 heading='Get to know us better' 
             />
             <div className="bg-white ">

@@ -83,28 +83,28 @@ var skills = [
         'title': 'Web Design',
         'name': 'Frontend Development',
         'content': `Learning the basics of web designing is a great start, gives you a better insight of the industry requirement.`,
-        'img': {}
+        'img': blog1
     },
 
     {
         'title': 'Web Development',
         'name': 'Backend Development',
         'content': `Web development (Backend) is 1 of the most highly demand skill in the industry.`,
-        'img': {}
+        'img': blog2
     },
 
     {
         'title': 'Desktop Development',
         'name': 'Desktop Application Development',
         'content': `Learn to build desktop application, Most organizations needs desktop application to perform some complex task.`,
-        'img': {}
+        'img': blog3
     },
     
     {
         'title': 'Mobile Development',
         'name': 'Mobile Application Development',
         'content': `Mobile app development is 1 one of the most highly demand skills in the industry today.`,
-        'img': {}
+        'img': blog4
     },
 
     {
@@ -112,7 +112,7 @@ var skills = [
         'name': 'UI / UX Design',
         'content': `Learn to understand user needs and present a 
                     simple to use design of the product before development.`,
-        'img': {}
+        'img': blog5
     },
 
 
@@ -120,7 +120,7 @@ var skills = [
         'title': 'Data Analysis',
         'name': 'Python Data Analysis',
         'content': `We offer data analysis with python, where python makes it easier to analyze your data.`,
-        'img': {}
+        'img': blog6
     },
 ]
 
@@ -214,4 +214,4 @@ var projects = [
         'img': blog6
     }
 ]
-export {services, contacts, navLinks, aboutService, projects};
+export {services, contacts, navLinks, aboutService, projects, skills};

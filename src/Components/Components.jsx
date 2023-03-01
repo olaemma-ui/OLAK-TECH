@@ -241,6 +241,23 @@ function Jumbotron({id, title, heading, page}){
     );
 }
 
+function Skill({img, title, content}) {
+    return (
+        <div className="w-100 shadow-spread rounded-20 bg-white skill-card">
+            
+            <img src={img} alt='' className="w-100 rounded-top-20 border-bottom-5" />
+
+            <p className="skill-icon place-center p-2 bg-white">
+                <img src={logo} className='w-100' alt="" />
+            </p>
+            <div className="skill-content p-3">
+                <h4 className="m-0 font-bold"> {title} </h4>
+                <span className="d-block mt-3"> {content} </span>
+            </div>
+        </div>
+    );
+}
+
 
 
 export {
@@ -254,5 +271,6 @@ export {
     PageLinks,
     AppTextField,
     AppTextArea,
-    Jumbotron
+    Jumbotron, 
+    Skill
 };

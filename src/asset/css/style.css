@@ -184,6 +184,7 @@ a.rounded-btn:hover{
     border: solid 1px var(--bs-dark);
     background-color: white;
 }
+
 .nav-item.nav-active > a{
     color: var(--bs-success) !important;
 }
@@ -240,6 +241,11 @@ h1.label{
 .rounded-20{
     border-radius: 20px;
 }
+.rounded-top-20{
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
 .border-20{
     border: solid 6px white;
 }
@@ -410,6 +416,45 @@ textarea.app-text-area{
     padding: 1em;   
     border: none;
 }
+.skill-card{
+    min-height: 24em;
+    max-width: 28em;
+    position: relative;
+    transition: all .3s;
+}
+.skill-card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.skill-card > img{
+    height: 15em;
+}
+.skill-icon{
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 6em;
+    right: 2em;
+    color: var(--bs-success);
+    border: solid .5em var(--bs-success);
+}
+.skill-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.apply-btn{
+    width: 7em;
+    height: 3em;
+    background-color: white;
+    border-radius: 1em;
+    transition: all .3s;
+}
+.border-bottom-5{
+    border-bottom: solid .5em var(--bs-success);
+}
 .app-text-area{
     border-radius: .4em;
 }
@@ -488,6 +533,10 @@ section{
     .heading-1{
         font-size: 4.5em;
     }
+    /* .skill-icon{
+        top: 50%;
+        left: 23em;
+    } */
 }
 
 @media screen and (max-width: 768px) {
@@ -510,6 +559,10 @@ section{
 }
 
 @media screen and (max-width: 575px) {
+    /* .skill-icon{
+        top: 9.5em;
+        left: 17.8em;
+    } */
     .contact-consult{
         visibility: hidden;
         position: absolute;
