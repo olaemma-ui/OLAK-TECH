@@ -150,9 +150,9 @@ var contacts = [
 var navLinks = [
     {'title':'Home', 'link': '', 'id': 'home'},
     {'title':'About', 'link': 'about', 'id': ''},
-    {'title':'Services', 'link': '', 'id': 'services'},
+    // {'title':'Services', 'link': '', 'id': 'services'},
     {'title':'Contact', 'link': 'contact', 'id': 'contact'},
-    {'title':'Projects', 'link': '', 'id': 'projects'},
+    {'title':'Projects', 'link': 'projects', 'id': ''},
 ];
 
 var aboutService = [

@@ -14,23 +14,23 @@ export const AboutPage =() => {
                     <div className="row">
                         <div className="col-lg-8 mb-5">
                        
-                        <Wrapper 
-                            wrapper='About' 
-                            title='About Us' 
-                            content='We provide digital experience services'
-                        >
-                            
-                            <h5 className="border-bottom pb-3">
-                                We help our client succeed by building and developing software 
-                                that solves their problems.
-                                The farmers will make more money. 
-                                Your lunch will not be imported, 
-                                cassava garri ewa and ehhh ehhhhnn. 
-                                The farmer will make money, 
-                                the dinner would be cassava, eba, ewa and everything.
-                            </h5>
+                            <Wrapper 
+                                wrapper='About' 
+                                title='About Us' 
+                                content='We provide digital experience services'
+                            >
+                                
+                                <h5 className="border-bottom pb-3">
+                                    We help our client succeed by building and developing software 
+                                    that solves their problems.
+                                    The farmers will make more money. 
+                                    Your lunch will not be imported, 
+                                    cassava garri ewa and ehhh ehhhhnn. 
+                                    The farmer will make money, 
+                                    the dinner would be cassava, eba, ewa and everything.
+                                </h5>
 
-                        </ Wrapper>
+                            </ Wrapper>
 
 
                         </div>
@@ -40,6 +40,17 @@ export const AboutPage =() => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="container">
+                <div className="mt-5 mb-5">
+                    <Wrapper 
+                        wrapper='Team' 
+                        title='The Team' 
+                        content='Meet the team!'
+                    ></ Wrapper>
+                </div>
+
+                
             </div>
         </section>
     );

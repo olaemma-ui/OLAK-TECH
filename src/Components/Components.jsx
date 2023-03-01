@@ -1,7 +1,7 @@
 import { Link, NavLink} from 'react-router-dom';
 import logo from '../asset/img/logo/logo.png';
 
-const handleScroll = (id) => {
+ const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) element.scrollIntoView({behavior: 'smooth'});
     else window.scrollTo(0, 0);
@@ -272,5 +272,6 @@ export {
     AppTextField,
     AppTextArea,
     Jumbotron, 
+    handleScroll,
     Skill
 };

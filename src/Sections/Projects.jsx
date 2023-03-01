@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Wrapper, Slider, Project } from "../Components/Components";
+import { Wrapper, Slider, Project, handleScroll } from "../Components/Components";
 import { projects } from "../Data/ComponentData";
 
 function Projects() {
@@ -18,7 +18,7 @@ function Projects() {
                             {projects.map((project)=> <Project {...project} />)}
                         </Slider>
 
-                        <Link to='/projects' className='read-more no-decoration'>
+                        <Link to='/projects' onClick={handleScroll} className='read-more no-decoration'>
                             See More
                         </Link>
                 </div>
