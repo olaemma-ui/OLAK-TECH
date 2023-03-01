@@ -1,4 +1,4 @@
-import { AppTextArea, AppTextField, Jumbotron, Project, Slider, Wrapper } from "../Components/Components";
+import {Jumbotron, Project, Slider, Wrapper } from "../Components/Components";
 import { projects } from "../Data/ComponentData";
 
 

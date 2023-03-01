@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Jumbotron, Skill, Skills, Wrapper } from "../Components/Components";
+import { Jumbotron, Skill,  Wrapper } from "../Components/Components";
 import { skills } from "../Data/ComponentData";
 
 import img from "../asset/img/blog/blog-9.jpg";
