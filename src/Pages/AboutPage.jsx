@@ -1,5 +1,8 @@
-import { Jumbotron, Wrapper } from "../Components/Components";
+import { Jumbotron, SocialIcon, UserDetails, Wrapper } from "../Components/Components";
+import { team } from "../Data/ComponentData";
 import img  from "../asset/img/blog/blog-5.jpg";
+import logo from '../asset/img/logo/logo.png';
+
 export const AboutPage =() => {
     return (
         <section className="pt-5">
@@ -41,7 +44,7 @@ export const AboutPage =() => {
                     </div>
                 </div>
             </div>
-            <div className="container">
+            <section className="container pb-5">
                 <div className="mt-5 mb-5">
                     <Wrapper 
                         wrapper='Team' 
@@ -49,9 +52,10 @@ export const AboutPage =() => {
                         content='Meet the team!'
                     ></ Wrapper>
                 </div>
-
                 
-            </div>
+                {team.map((team) =>  <UserDetails {...team} />)}
+                
+            </section>
         </section>
     );
 }

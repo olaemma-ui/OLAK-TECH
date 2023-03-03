@@ -1,26 +1,52 @@
 import { Link } from "react-router-dom";
 import { Wrapper, Slider, Project, handleScroll } from "../Components/Components";
-import { projects } from "../Data/ComponentData";
+import OwlCarousel from 'react-owl-carousel'; 
 
-function Projects() {
+import 'owl.carousel/dist/assets/owl.carousel.css';  
+import 'owl.carousel/dist/assets/owl.theme.default.css'; 
+const options = {
+    margin: 30,
+    responsiveClass: true,
+    nav: true,
+    autoplay: true,
+    smartSpeed: 1000,
+    rewind: true,
+    navText: [],
+    responsive: {
+        0: {
+            items: 1,
+        },
+        400: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        700: {
+            items: 3,
+        },
+        1000: {
+            items: 3,
+        }
+    },
+  };
+function Projects({projects, wrapper, title, content, children}) {
+   
     return(
        <>
             <section id="projects">
                 <div className="container mt-5 mb-5">
                         <Wrapper 
-                            wrapper='Project' 
-                            title='Projects' 
-                            content='Our Projects!'
+                            wrapper={wrapper} 
+                            title={title} 
+                            content={content}
                         >
                         </ Wrapper>
                         
-                        <Slider>
+                        <OwlCarousel className="owl-carousel" {...options}>
                             {projects.map((project)=> <Project {...project} />)}
-                        </Slider>
-
-                        <Link to='/projects' onClick={handleScroll} className='read-more no-decoration'>
-                            See More
-                        </Link>
+                        </OwlCarousel>
+                        {children}
                 </div>
             </section>
 

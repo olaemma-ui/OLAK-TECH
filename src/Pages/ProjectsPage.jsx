@@ -1,5 +1,6 @@
 import {Jumbotron, Project, Slider, Wrapper } from "../Components/Components";
 import { projects } from "../Data/ComponentData";
+import Projects from "../Sections/Projects";
 
 
 export const ProjectsPage =() => {
@@ -16,68 +17,43 @@ export const ProjectsPage =() => {
                 <div className="container">
                    
                    <div className="mt-5">
-                        <Wrapper 
+                       <Projects 
                             wrapper='Web Applications' 
                             title='Web' 
                             content='Web Application'
-                        >
-                        </ Wrapper>
-                        
-                        <Slider>
-                            {projects.map((project)=> <Project {...project} />)}
-                        </Slider>
+                            projects={projects}/>
                    </div>
 
                    <div className="mt-5">
-                        <Wrapper 
+                        <Projects 
                             wrapper='Mobile Applications' 
                             title='Mobile' 
                             content='Mobile Application'
-                        >
-                        </ Wrapper>
-                        
-                        <Slider>
-                            {projects.map((project)=> <Project {...project} />)}
-                        </Slider>
+                            projects={projects}/>
                    </div>
 
                    <div className="mt-5">
-                        <Wrapper 
+                        <Projects 
                             wrapper='Destop Applications' 
                             title='Desktop' 
                             content='Destop Application'
-                        >
-                        </ Wrapper>
-                        
-                        <Slider>
-                            {projects.map((project)=> <Project {...project} />)}
-                        </Slider>
+                            projects={projects}/>
                    </div>
 
                    <div className="mt-5">
-                        <Wrapper 
+                        <Projects 
                             wrapper='Python Software' 
                             title='Python' 
                             content='Python Software'
-                        >
-                        </ Wrapper>
-                        
-                        <Slider>
-                            {projects.map((project)=> <Project {...project} />)}
-                        </Slider>
+                            projects={projects}/>
                    </div>
 
                    <div className="mt-5">
-                        <Wrapper 
+                        <Projects 
                             wrapper='Data Analysis' 
                             title='Analysis' 
                             content='Data Analysis'
-                        >
-                        </ Wrapper>
-                        
-                        <Slider>
-                            {projects.map((project)=> <Project {...project} />)}
-                        </Slider>
+                            projects={projects}/>
                    </div>
 
                 </div>

@@ -5,7 +5,7 @@ import blog4 from "../asset/img/blog/blog-4.jpg";
 import blog5 from "../asset/img/blog/blog-5.jpg";
 import blog6 from "../asset/img/blog/blog-6.jpg";
 
-var services = [
+const services = [
     {
         'title': 'Web Development',
         'icon': 'fa-code',
@@ -78,7 +78,7 @@ var services = [
     }
 ];
 
-var skills = [
+const skills = [
     {
         'title': 'Web Design',
         'name': 'Frontend Development',
@@ -124,7 +124,7 @@ var skills = [
     },
 ]
 
-var contacts = [
+const contacts = [
     {
         'href':'tel+',
         'title':'Phone Number',
@@ -147,7 +147,7 @@ var contacts = [
     }
 ];
 
-var navLinks = [
+const navLinks = [
     {'title':'Home', 'link': '', 'id': 'home'},
     {'title':'About', 'link': 'about', 'id': ''},
     // {'title':'Services', 'link': '', 'id': 'services'},
@@ -155,7 +155,7 @@ var navLinks = [
     {'title':'Projects', 'link': 'projects', 'id': ''},
 ];
 
-var aboutService = [
+const aboutService = [
 
     {
         'title': 'Data Analysis',
@@ -171,7 +171,7 @@ var aboutService = [
 
 ];
 
-var projects = [
+const projects = [
     {
         'title': 'Project 1 Title',
         'about': 'A town hall different from bala blu, blue blu bulaba. broom broom ......',
@@ -214,4 +214,96 @@ var projects = [
         'img': blog6
     }
 ]
-export {services, contacts, navLinks, aboutService, projects, skills};
+
+const team = [
+    {
+        'name': 'Tejumola Emmanuel O.',
+        'about': `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae tempore ducimus tempora rerum autem maiores totam alias officia dolore, 
+                modi eligendi aspernatur, ab impedit optio omnis atque quas vitae explicabo?`,
+        'role': 'Mobile & Web Developer',
+        'img': blog1,
+        'reverse': true,
+        'contact': [
+            // {
+            //     'title': 'Phone Number',
+            //     'content': '(+234) 815 2715 095',
+            //     'icon': 'fa-phone-alt'
+            // },
+            // {
+            //     'title': 'Email',
+            //     'content': 'olaemma4213@gmail.com',
+            //     'icon': 'fa-envelope'
+            // }
+        ],
+        'account': [
+            {
+                'icon': 'fab fa-facebook',
+                'link': 'https://facebook.com',
+                'color': 'primary'
+            },
+            {
+                'icon': 'fab fa-twitter',
+                'link': 'https://twitter.com',
+                'color': 'info'
+            },
+            {
+                'icon': 'fab fa-instagram',
+                'link': 'https://intagram.com',
+                'color': 'danger'
+            },
+            {
+                'icon': 'fab fa-linkedin',
+                'link': 'https://linkedin.com',
+                'color': 'primary'
+            },
+        ]
+    },
+
+    {
+        'name': 'Adebiyi Abdulsamod A.',
+        'about': `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae tempore ducimus tempora rerum autem maiores totam alias officia dolore, 
+                modi eligendi aspernatur, ab impedit optio omnis atque quas vitae explicabo?`,
+        'role': 'Fullstack Web Developer',
+        'reverse': false,
+        'img': blog1,
+        'contact': [
+            {
+                'title': 'Phone Number',
+                'content': '(+234) 815 2715 095',
+                'icon': 'fa-phone-alt'
+            },
+            {
+                'title': 'Email',
+                'content': 'olaemma4213@gmail.com',
+                'icon': 'fa-envelope'
+            }
+        ],
+        'account': [
+            {
+                'icon': 'fab fa-facebook',
+                'link': 'https://facebook.com',
+                'color': 'primary'
+            },
+            {
+                'icon': 'fab fa-twitter',
+                'link': 'https://twitter.com',
+                'color': 'info'
+            },
+            {
+                'icon': 'fab fa-instagram',
+                'link': 'https://intagram.com',
+                'color': 'danger'
+            },
+            {
+                'icon': 'fab fa-linkedin',
+                'link': 'https://linkedin.com',
+                'color': 'primary'
+            },
+        ]
+    }
+];
+
+
+export {services, contacts, navLinks, aboutService, projects, skills, team};

@@ -1,11 +1,13 @@
 import { Link, NavLink} from 'react-router-dom';
 import logo from '../asset/img/logo/logo.png';
+import { useState } from 'react';
 
- const handleScroll = (id) => {
+const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) element.scrollIntoView({behavior: 'smooth'});
     else window.scrollTo(0, 0);
 }
+
 
 function Wrapper({wrapper, title, content, children}) {
     return (
@@ -89,10 +91,10 @@ function Logo() {
     );
 }
 
-function Project(props){
+function Project({title, link, about, img}){
     return (
         <div className="project-card">
-            <img src={props.img} alt="" className="project-img" />
+            <img src={img} alt="" className="project-img" />
             <div className="project-body">
                 <div className="bg-light navbar">
                     <Logo />
@@ -102,12 +104,12 @@ function Project(props){
 
                     <span>
                         <h3>
-                            {props.title}
+                            {title}
                         </h3>
-                        <small className="font-sm project-about">{props.about}</small>    
+                        <small className="font-sm project-about">{about}</small>    
                     </span>
 
-                    <a href={props.link} className="rounded-btn">
+                    <a href={link} className="rounded-btn">
                         <i className="fa fa-arrow-right"></i>
                     </a>
 
@@ -152,17 +154,20 @@ function FooterLinkHeader({title, children}){
     );
 }
 
-function PageLinks({links, padding}){
 
+function PageLinks({links, padding, onClick}){
     return (
-        <ul className="navbar nav flex-colum align-items-start p-0 gap-3">
+        
+        <ul className={"navbar nav p-md-0 gap-3"}>
             {
                 links.map((link) => 
                     <li className="nav-item">
                         <NavLink
-                            onClick={()=>{handleScroll(link.id)}}
-                            to={link.link} 
-                            
+                            onClick={()=>{
+                                handleScroll(link.id); 
+                                onClick()
+                            }}
+                            to={link.link}
                             className={`nav-link text-secondary ${padding}`}
                         >
                             {link.title}
@@ -258,6 +263,35 @@ function Skill({img, title, content}) {
     );
 }
 
+function SocialIcon({icon, color, link}){
+    return (
+        <a href={link} className={'mt-3 social-icon border-'+color}>
+            <i className={icon+' fa-lg text-'+color}></i>
+        </a>
+    );
+}
+
+function UserDetails({role, name, about, contact, account, img, reverse}){
+    return (
+        <div className={"row align-items-center pt-5 "+ (reverse ? 'flex-md-row-reverse flex-column-reverse' : 'flex-column-reverse flex-md-row') +"  mb-5"}>
+            <div className="col-md-6">
+                <p className='font-bold'>{role}</p>
+
+                <h1 className="heading-2"> {name} </h1>
+                <p> {about} </p>
+                <div className="social-group">
+                    {account.map((account) =>
+                        <SocialIcon {...account} />
+                    )}
+                </div>
+            </div>
+
+            <div className="col-md-6  mb-3">
+                <img src={img} className="team-img" alt="img" />
+            </div>
+        </div>
+    );
+}
 
 
 export {
@@ -273,5 +307,7 @@ export {
     AppTextArea,
     Jumbotron, 
     handleScroll,
-    Skill
+    Skill,
+    SocialIcon,
+    UserDetails
 };

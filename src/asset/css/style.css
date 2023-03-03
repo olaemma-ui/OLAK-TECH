@@ -302,6 +302,9 @@ h1.label{
     padding-left: 2em;
     max-width: 100%;
 }
+.owl-carousel > :first-child{
+    padding: 1.5em !important;
+}
 .project-card{
     width: 100%;
     min-width: 25em;
@@ -346,7 +349,12 @@ h1.label{
 .project-card > .project-body > .navbar{
     border-radius: .8em;
     margin: 0;
-    width: 15em;
+    padding: 0.2em;
+    width: 13em;
+}
+.project-card > .project-body > .navbar .logo{
+    width: 2em;
+    height: 2em;
 }
 .project-card > .project-body > .project-content{
     height: 70%;
@@ -527,16 +535,69 @@ section{
 .bg-trans{
     background-color: #adadad31;
 }
+.team-img{
+    max-height: 35em;
+    width: 100%;
+    border-radius: 2em;
+}
 
+.social-icon{
+    display: block;
+    width: 3.5em;
+    height: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 100%;
+    border: solid .5em;
+    box-shadow: 0px 0px 10px 1px #01631844;
+    color: var(--bs-success);
+    background-color: white;
+    margin-right: 1em;
+}
+.social-icon:hover{
+    color: var(--bs-success);
+}
+.social-group{
+    display: flex;
+    width: 100%;
+}
+.glow-sm{
+    width: 2.5em;
+    height: 2.5em;
+}
+.profile-card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.toggle-nav{
+    flex-direction: row;
+    align-items: start;
+    /* position: fixed; */
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    overflow-y: auto;
+    justify-content: start;
+    
+}
+.toggle-btn{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .md-visible{
+        visibility: visible !important;
+        position: relative !important;
+    }
+}
 
 @media screen and (max-width: 990px) {
     .heading-1{
         font-size: 4.5em;
     }
-    /* .skill-icon{
-        top: 50%;
-        left: 23em;
-    } */
 }
 
 @media screen and (max-width: 768px) {
@@ -555,7 +616,36 @@ section{
     .bg-wrapper{
         font-size: 8em;
     }
-    
+    @keyframes slide-in {
+        from{ transform: translateX(30em); }
+        to{ transform: translateX(0em); }
+    }
+    @keyframes slide-out {
+        from{ transform: translateX(0em); }
+        to{ transform: translateX(30em); }
+    }
+    .toggle-nav{
+        position: fixed;
+        height: 100%;
+        width: 15em;
+        background-color: white;
+        overflow-y: auto;
+        justify-content: start;
+        padding: 1em 1em !important;
+        box-shadow: 5px 50px 50px 20px rgba(77, 77, 77, 0.127);
+        animation: slide-in;
+        animation-duration: .5s;
+    }
+    .toggle-nav > .navbar{
+        flex-direction: column;
+        align-items: start !important;
+    }
+    .toggle-nav > .navbar > li{
+        width: 100%;
+    }
+    .toggle-btn{
+        display: block !important;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -567,22 +657,24 @@ section{
         visibility: hidden;
         position: absolute;
     }
-    .slider{
-        padding-left: 1em;
-    }
     .bg-wrapper{
         font-size: 5em;
     }
     .project-card > img.project-img{
-        width: 20em;
-        height: 13.5em;
+        width: 19em !important;
+        height: 13em;
     }
     .project-card{
-        min-width: 20em;
-        height: 13.5em;
+        width: 19em;
+        height: 13em;
     }
     .project-card > .project-body > .project-content{
         padding-bottom: 1em;
+        height: 80%;
+        width: 18em;
+    }
+    .project-body{
+        width: 19em;
     }
     .group-item{
         flex-direction: column;
