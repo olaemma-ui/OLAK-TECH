@@ -1,5 +1,5 @@
 import { Jumbotron, SocialIcon, UserDetails, Wrapper } from "../Components/Components";
-import { team } from "../Data/ComponentData";
+import { team, aboutUs } from "../Data/ComponentData";
 import img  from "../asset/img/blog/blog-5.jpg";
 import logo from '../asset/img/logo/logo.png';
 
@@ -14,7 +14,7 @@ export const AboutPage =() => {
             />
             <div className="bg-white ">
                 <div className="container pt-5 pb-5">
-                    <div className="row">
+                    <div className="row align-items-center">
                         <div className="col-lg-8 mb-5">
                        
                             <Wrapper 
@@ -23,14 +23,22 @@ export const AboutPage =() => {
                                 content='We provide digital experience services'
                             >
                                 
-                                <h5 className="border-bottom pb-3">
-                                    We help our client succeed by building and developing software 
-                                    that solves their problems.
-                                    The farmers will make more money. 
-                                    Your lunch will not be imported, 
-                                    cassava garri ewa and ehhh ehhhhnn. 
-                                    The farmer will make money, 
-                                    the dinner would be cassava, eba, ewa and everything.
+                                <h5 className="border-bottom pb-3 mt-3">
+                                   {aboutUs.about}
+                                </h5>
+
+                                <h3 className="text-success mt-5">
+                                    Vision
+                                </h3>
+                                <h5 className="border-bottom pb-3 mt-3">
+                                   {aboutUs.vision}
+                                </h5>
+
+                                <h3 className="text-success mt-5">
+                                    Mission
+                                </h3>
+                                <h5 className="border-bottom pb-3 mt-3">
+                                   {aboutUs.mission}
                                 </h5>
 
                             </ Wrapper>

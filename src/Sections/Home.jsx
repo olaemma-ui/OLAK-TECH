@@ -18,8 +18,7 @@ function Home(){
 
                             <h4 className="mt-3 text-secondary">
                                 Along with desktop, mobile, and web services, we create websites and web applications. 
-                                A three-month curriculum is also available from us to teach the next generation various 
-                                technological skills...
+                                A three-month curriculum is also available from us to put the next generation on the tech race...
                             </h4>
 
                             <a href="https://" className="btn read-more">Read More</a>

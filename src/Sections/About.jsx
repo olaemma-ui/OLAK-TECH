@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import feature from '../asset/img/feature/feature-1.jpg';
 import { Wrapper } from '../Components/Components';
+import { aboutUs } from '../Data/ComponentData';
 
 
 function About() {
@@ -16,13 +17,7 @@ function About() {
                     >
                         <div className='shadow-spread bg-white p-4 mt-4'>
                             <h5 className='text-secondary'>
-                                We help our client succeed by building and developing software 
-                                that solves their problems.
-                                The farmers will make more money. 
-                                Your lunch will not be imported, 
-                                cassava garri ewa and ehhh ehhhhnn. 
-                                The farmer will make money, 
-                                the dinner would be cassava, eba, ewa and everything.
+                                {aboutUs.about}
                             </h5>
 
                             <h4 className='text-success m-0 p-0 mt-3'>

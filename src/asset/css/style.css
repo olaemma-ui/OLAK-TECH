@@ -307,15 +307,16 @@ h1.label{
 }
 .project-card{
     width: 100%;
-    min-width: 25em;
-    height: 15em;
+    /* min-width: 25em; */
+    height: 20em;
     cursor: pointer;
     transition: all .3s;
 }
 .project-card:hover .project-body{
     content: '';
     height: 100%;
-    background-color: #2222229a;
+    background-color: #071d059a;
+    backdrop-filter: blur(.2em);
     z-index: 1;
     transition: all .3s;
     visibility: visible;
@@ -328,7 +329,7 @@ h1.label{
 }
 .project-card > img.project-img{
     width: 25em;
-    height: 15em;
+    height: 20em;
     position: absolute;
     z-index: -1;
     border-radius: .8em;

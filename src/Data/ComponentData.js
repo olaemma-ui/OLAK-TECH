@@ -154,7 +154,14 @@ const navLinks = [
     {'title':'Contact', 'link': 'contact', 'id': 'contact'},
     {'title':'Projects', 'link': 'projects', 'id': ''},
 ];
-
+const aboutUs = {
+    'about': `We are Educational Technology (EduTech) company. 
+                We've been providing digital solutions to individuals and business since 2016. Our team is made up of young and energetic innovators 
+                who are passionate about making EduTech simple. Over the years we grew within our industry by providing cutting-edge products and 
+                services that make better lives possible for everyone around the globe.`,
+    'vision': 'To be the most reliable service and product provider and enhance digital products or service.',
+    'mission': 'Our goal is to provide our client ith the best service and product at the best possible market price without compromising quality'
+}
 const aboutService = [
 
     {
@@ -306,4 +313,4 @@ const team = [
 ];
 
 
-export {services, contacts, navLinks, aboutService, projects, skills, team};
+export {services, contacts, navLinks, aboutService, projects, skills, team, aboutUs};
