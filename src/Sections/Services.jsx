@@ -1,5 +1,5 @@
 
-import { Wrapper, Service, Slider } from "../Components/Components";
+    import { Wrapper, Service } from "../Components/Components";
 import { services } from "../Data/ComponentData";
 
 

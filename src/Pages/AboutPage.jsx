@@ -1,7 +1,6 @@
-import { Jumbotron, SocialIcon, UserDetails, Wrapper } from "../Components/Components";
+import { Jumbotron, UserDetails, Wrapper } from "../Components/Components";
 import { team, aboutUs } from "../Data/ComponentData";
 import img  from "../asset/img/blog/blog-5.jpg";
-import logo from '../asset/img/logo/logo.png';
 
 export const AboutPage =() => {
     return (

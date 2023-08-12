@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { Wrapper, Slider, Project, handleScroll } from "../Components/Components";
+
+import { Wrapper, Project, } from "../Components/Components";
 import OwlCarousel from 'react-owl-carousel'; 
 
 import 'owl.carousel/dist/assets/owl.carousel.css';  
