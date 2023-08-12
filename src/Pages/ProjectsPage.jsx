@@ -1,4 +1,4 @@
-import {Jumbotron, Project, Slider, Wrapper } from "../Components/Components";
+import {Jumbotron} from "../Components/Components";
 import { projects } from "../Data/ComponentData";
 import Projects from "../Sections/Projects";
 

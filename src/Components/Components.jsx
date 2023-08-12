@@ -1,6 +1,6 @@
 import { Link, NavLink} from 'react-router-dom';
 import logo from '../asset/img/logo/logo.png';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 const handleScroll = (id) => {
     const element = document.getElementById(id);
