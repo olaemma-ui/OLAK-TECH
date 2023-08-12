@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage" : "http://olaemma-ui.github.io/OLAK-TECH",
+  
   "eslintConfig": {
     "extends": [
       "react-app",
